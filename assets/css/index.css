@@ -4,6 +4,8 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
+  background-color: #f4f1ec;
+  color: #2b2b2b;
 }
 
 *::before,
@@ -51,9 +53,9 @@ textarea {
   display: inline;
 }
 
-a:link:hover {
+/* a:link:hover {
   color: red;
-}
+} */
 
 .sectionTitle {
   color: #1f3d7a;
@@ -65,7 +67,8 @@ a:link:hover {
 }
 
 .navbar a {
-  color: hsl(67, 98%, 26%);
+  color: white;
+  text-decoration: none;
 }
 
 .inputForm {
@@ -76,8 +79,8 @@ a:link:hover {
 }
 
 .inputForm:focus {
-  border: 3px solid white;
-  background-color: #232323;
+  border: 3px solid hsl(220, 60%, 30%);
+  background-color: white;
   color: white;
 }
 
@@ -129,8 +132,10 @@ a:link:hover {
   text-align: justify;
 }
 
-.project {
-  background-color: #ffffff;
+
+.project a{
+  text-decoration: none;
+  color: hsl(220, 60%, 30%);
 }
 
 article .project:nth-of-type(odd) {
@@ -216,8 +221,9 @@ figure, image {
 }
 
 .tab:hover a {
-  background-color: #0000008c;
-  color: white;
+  /* cambiare colore background */
+  background-color: yellow; 
+  color: black;
 }
 
 .project:hover{
@@ -229,7 +235,7 @@ body{
 }
 
 .inputForm::placeholder{
-  color: #999999;
+  color: #a39b87;
   font-style: italic;
 }
 
@@ -239,5 +245,31 @@ body{
 }
 
 .tab{
+  color: white;
   margin: 2px;
+  border: 1px solid;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 3%;
+  border: 1px 1px 1px;
+}
+
+.projectlink{
+  color: hsl(220, 60%, 30%);
+  display: block;
+  text-align: end;
+  text-decoration: underline 2.5px rgb(255, 238, 0);
+  /* colore bordo da cambiare */
+
+  
+}
+
+.projectLink:hover{
+  color: hsl(220, 60%, 45%);
+}
+
+article a:hover {
+  text-decoration:underline 2.5px  yellow ;
 }
