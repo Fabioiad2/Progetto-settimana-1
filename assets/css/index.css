@@ -328,3 +328,43 @@ label{
 td p {
   margin: 0px;
 }
+
+.livelloContainer{
+  display: inline-block;
+  border: 1px solid black;
+  text-align: start;
+  height: 16px;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.livello{
+  background-color: orange;
+  height: 100%;
+
+}
+
+.livelloHtml{
+  width: 95%;
+  height: 100%;
+}
+
+.livelloCss{
+  width: 80%;
+}
+
+.livelloGit{
+  width: 60%;
+}
+
+.livelloTerminal{
+  width: 50%;
+}
+
+.livelloMD{
+  width: 70%;
+}
+
+.competezeThead th{
+  margin: 0px;
+}
