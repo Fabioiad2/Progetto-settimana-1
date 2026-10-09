@@ -12,20 +12,34 @@ body {
   overflow: auto;
 }
 
+table{
+  width: 100%;
+}
 
 table,
-td,
 th {
-  border: 0.1px solid;
+  border: 1px solid #ece6d8;
+}
+
+th, tr{
+  width: 33.33%;
+}
+
+th{
+  color:hsl(220, 60%, 25%);
 
 }
 
 thead{
-  background-color: black;
+  background-color: #ece6d8;
   color: white;
 }
 td,th{
   padding: 6px;
+}
+caption{
+  text-align: start;
+  color: hsl(220, 30%, 40%);
 }
 
 input,
@@ -170,7 +184,7 @@ figure, image {
 }
 
 .sectionTitle::before{
-  content: ' -';
+  content: '\2756 ';
   color: yellow;
 }
 
