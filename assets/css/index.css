@@ -315,15 +315,29 @@ label{
   color: 2b2b2b;
 }
 
-.socialcontainer{
-  width: 100%;
-}
+
 
 .cardsocial{
   display: inline-block;
-  font-size: 100%;
-  margin: 1%;
+  margin: 10px;
+  box-sizing: border-box;
+
 }
+
+.icon{
+  width: 60x;
+  height: 40px;
+  background-color: #00000055;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.icon a{
+  color: white;
+  padding: 5px;
+}
+
+
 
 .mtNegativo{
   margin-top: -100px;
