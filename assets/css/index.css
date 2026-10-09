@@ -16,11 +16,12 @@ body {
 
 table{
   width: 100%;
+  color: hsl(220, 60%, 25%)
 }
 
 table,
 th {
-  border: 1px solid #ece6d8;
+  border: 1px solid #ece6d8
 }
 
 th, tr{
@@ -32,6 +33,7 @@ th{
 
 }
 
+
 thead{
   background-color: #ece6d8;
   color: white;
@@ -41,7 +43,7 @@ td,th{
 }
 caption{
   text-align: start;
-  color: hsl(220, 30%, 40%);
+  color:  hsl(220, 30%, 40%);
 }
 
 input,
@@ -58,7 +60,7 @@ textarea {
 } */
 
 .sectionTitle {
-  color: #1f3d7a;
+  color: hsl(220, 30%, 25%);
 }
 
 .skills li:nth-child(odd) {
@@ -72,30 +74,39 @@ textarea {
 }
 
 .inputForm {
+  background-color: #fbf8f1;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  width: 60%;
   padding: 7px;
   border-radius: 5px;
 }
 
+
+
+
 .inputForm:focus {
   border: 3px solid hsl(220, 60%, 30%);
-  background-color: white;
-  color: white;
+  /* background-color: white; */
+  color: fbf8f1;
+}
+
+.inputForm, select, textarea{
+  width: 100%;
 }
 
 .btn,
 .footer {
-  background-color: hsl(220, 60%, 30%);
+  background-color: hsl(220, 40%, 15%);
   color: white;
 }
 .btn {
-  padding: 12px 24x;
   border: none;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 20%;
+  padding: 10px;
 }
+
+
 .btn:hover{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -112,14 +123,31 @@ textarea {
   text-align: center;
   background-image: url("https://picsum.photos/seed/picsum/1240/768");
   background-size: cover;
+  background-position: center;
   padding: 60px 20px 40px;
+  border: 1px solid #e6e0d3;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   border-bottom: 4px;
   text-shadow: rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.studente {
-  color: #f44a4a;
+header h2{
+  color: hsl(220, 60%, 25%);
 }
+
+a:link{
+border:1px solid rgba(255, 255, 255, 0.3)
+}
+a:link, nav:hover{
+  border: hsl(45, 90%, 60%)
+}
+
+.sottotitolo{
+  color: #f0e7c8
+}
+
+
 
 .title {
   font-weight: bold;
@@ -145,9 +173,10 @@ article .project:nth-of-type(odd) {
 section {
   padding: 32px;
   margin-bottom: 24px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e6e0d3;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: white;
 }
 
 .navbar ul li {
@@ -183,20 +212,20 @@ figure, image {
 
 
 .chisonoContent p:first-of-type::first-letter{
-  color: rgba(0, 0, 86, 0.685);
+  color: hsl(220, 60%, 30%);
   font-size: 3rem;
   font-weight: bold;
 }
 
 .sectionTitle::before{
   content: '\2756 ';
-  color: yellow;
+  color: hsl(45, 90%, 50%);
 }
 
 
 .profileimage{
   border-radius: 50%;
-  border: 1px solid yellow;
+  border:5px solid hsl(45, 90%, 60%);
   width: 100%;
   height: 100%
 }
@@ -252,6 +281,7 @@ body{
 
 .project {
   background-color: #ffffff;
+  border-color: hsl(220, 60%, 30%) - oro hsl(45, 90%, 50%) ;
   padding: 3%;
   border: 1px 1px 1px;
 }
@@ -272,4 +302,18 @@ body{
 
 article a:hover {
   text-decoration:underline 2.5px  yellow ;
+}
+
+label{
+  color: 2b2b2b;
+}
+
+.socialcontainer{
+  width: 100%;
+}
+
+.cardsocial{
+  display: inline-block;
+  font-size: 100%;
+  margin: 1%;
 }
