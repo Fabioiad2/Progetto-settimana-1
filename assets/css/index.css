@@ -126,9 +126,14 @@ textarea {
   background-color: hsl(220, 60%, 45%);
 }
 
+
+
 .headerSection {
   text-align: center;
-  background-image: url("https://picsum.photos/seed/picsum/1240/768");
+  background-color: hsl(220, 40%, 20%);
+  background-image:
+        linear-gradient(rgba(20, 30, 60, 0.55), rgba(20, 30, 60, 0.75)),
+        url('https://picsum.photos/seed/picsum/1240/768');
   background-size: cover;
   background-position: center;
   padding: 60px 20px 40px;
@@ -389,3 +394,4 @@ td p {
 .competezeThead th{
   margin: 0px;
 }
+
