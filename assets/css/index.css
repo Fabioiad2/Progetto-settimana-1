@@ -29,7 +29,6 @@ table{
   color: hsl(220, 60%, 25%)
 }
 
-table,
 th {
   border: 1px solid #ece6d8
 }
@@ -308,7 +307,7 @@ body{
   color: hsl(220, 60%, 30%);
   display: block;
   text-align: end;
-  text-decoration: underline 2.5px rgb(255, 238, 0);
+  text-decoration: underline 2px  rgb(255, 238, 0);
   /* colore bordo da cambiare */
 
   
