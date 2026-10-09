@@ -321,3 +321,10 @@ label{
 .mtNegativo{
   margin-top: -100px;
 }
+
+.titoloTD{
+  margin: 0px;
+}
+td p {
+  margin: 0px;
+}
