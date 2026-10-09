@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabio Iadicicco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+  <header class="headerSection" id="start">
+    <h1 class="title">Fabio Iadicicco</h1>
+    <p>
+      <strong class="studente">Studente Full Stack</strong> - corso Epicode 2026
+    </p>
+    <nav class="navbar">
+      <ul >
+        <li class="tab">
+          <a href="#chiSono">Chi sono</a>
+        </li>
+        <li class="tab">
+          <a href="#competenze">Competenze</a>
+        </li>
+        <li class="tab">
+          <a href="#esperienze">Esperienze</a>
+        </li>
+        <li class="tab">
+          <a href="#progetti">Progetti</a>
+        </li>
+        <li class="tab">
+          <a href="#contatti">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section id="chiSono">
+      <h2 class="sectionTitle">Chi sono</h2>
+      <div>
+        <figure class="containierlogo">
+          <img class="profileimage" src="assets/img/ProfileImage.png" title="Immagine profilo" alt="Immagine profilo">
+          <!-- <figcaption>immagine da <a href="placehold.co">placehold.co</a></figcaption> -->
+        </figure>
+        <div class="chisonoContent">
+          <p>Ciao, sono Fabio Iadicicco e ho 19 anni. Ho iniziato a creare pagine HTML a 16 anni, quasi per gioco. Da allora mi sono appassionato allo sviluppo web e ho capito che è la strada che voglio seguire.
+          </p>
+        </div>
+        <!-- <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div> -->
+      </div>
+      
+      <!-- <aside>
+        <h4>curiosità:</h4>
+        <p>Ho iniziato a scrivere le prime righe di html nel 2023</p>
+      </aside> -->
+      <a href="#start">Torna su</a>
+    </section>
+
+    <section id="competenze">
+      <h2 class="sectionTitle">
+        Competenze
+      </h2>
+      <p>Competenze apprese durante le prime settimane del corso</p>
+      <ul class="skills">
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Git e Github</li>
+        <li>Visual studio code</li>
+      </ul>
+      <a href="#start">Torna su</a>
+
+    </section>
+
+
+    <section id="esperienze">
+      <h2 class="sectionTitle">Esperienze</h2>
+      <p>Un riepilogo delle mie esperienze</p>
+      <table>
+        <caption>Esperienze Formative</caption>
+        <thead>
+          <tr>
+            <th>Anno</th>
+            <th>Ruolo</th>
+            <th>Azienda/scuola</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026</td>
+            <td>Studente full Stack </td>
+            <td>epicode</td>
+          </tr>
+          <tr>
+            <td>2021 - 2026</td>
+            <td>istituto tecnico informatico</td>
+            <td>Nome</td>
+          </tr>
+          <tr>
+            <td>2023 - oggi</td>
+            <td>Sviluppo web</td>
+            <td>indipendente</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#start">Torna su</a>
+
+    </section>
+
+
+
+    <section id="progetti">
+      <h2 class="sectionTitle">Progetti</h2>
+      <p>I lavori svolti durante le prime settimane del corso.</p>
+      <a href="#start">Torna su</a>
+
+    </section>
+
+    <article class="project">
+      <h3>
+        Pagina ricetta
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nihil, commodi at, ratione sint beatae assumenda
+        accusantium architecto maxime aperiam rerum inventore voluptatibus, mollitia tempore eos doloremque! Ad, eius
+        debitis.
+      </p>
+      <a target="_blank" href="javascript:void(0)">Vedi su github</a>
+    </article>
+
+    <article class="project">
+      <h3>
+        Card di presentazione
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni sapiente, atque voluptate rem earum,
+        possimus
+        quasi eius dolore facere nisi tempore sint aut ipsa et dolorum culpa provident eum.
+      </p>
+      <a target="_blank" href="javascript:void(0)">Vedi su github</a>
+    </article>
+
+    
+
+  <section>
+    <h2 class="sectionTitle" id="contatti">
+      Contatti
+    </h2>
+    <p>Sono presente in queste piattaforme, dove puoi seguirmi e contattarmi</p>
+    <form class="staticForm" method="post" action="">
+      <label for="name" id="name">Nome</label>
+      <input class="inputForm" placeholder="il tuo nome" type="text" name="name" id="name">
+      <label required for="email" id="email">email</label>
+      <input class="inputForm" type="text" placeholder="la tua email" name="email" id="email">
+      <label for="select">Motivo del contatto</label> <br>
+      <select class="inputForm" name="select" id="select">
+        <option value="#">seleziona un opzione</option>
+        <option value="#">opzione A</option>
+        <option value="#">opzione B</option>
+        <option value="#">opzione C</option>
+      </select> <br>
+      <label for="date">Data preferita per la risposta</label>
+      <input class="inputForm" type="date" name="date" id="date">
+      <label for="messaggio">messaggio</label>
+      <textarea class="inputForm" required rows="5" name="messaggio" id="messaggio" placeholder="scrivi il messaggio"></textarea>
+      <input  type="checkbox" name="verify" id="verify">
+      <label for="verify">Accetto di essere ricontattato</label>
+      <br>
+      <button class="btn" type="submit">Invia</button>
+    </form>
+    <p>Profilo Github: <a target="_blank" href="https://github.com/Fabioiad2">github.com/Fabioiad2</a></p>
+    <p>Profilo Linkedin: <a target="_blank"
+        href="https://www.linkedin.com/in/fabio-iadicicco-b78362281/">linkedin.com/in/fabio-iadicicco</a></p>
+    <a href="#start">Torna su</a>
+  </section>
+  </main>
+  <footer class="footer">
+    <p>&copy;2026 Fabio Iadicicco </p>
+  </footer>
+</body>
+</html>
