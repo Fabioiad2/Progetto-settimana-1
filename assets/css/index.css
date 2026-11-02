@@ -215,10 +215,7 @@ ul {
   color: #999999;
 }
 
-main {
-  margin: 0 auto;
-  padding: 40px 20px;
-}
+
 
 
 
@@ -402,37 +399,40 @@ figure {
 }
 
 
+main {
+  max-width: 990px;
+  padding-inline: 0px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-  main {
-    max-width: 990px;
-    padding-inline: 0px;
+form {
+  width: 100%;
+}
 
-  }
-
-  form {
-    width: 50%;
-  }
-
-  .btn {
-    width: 50%;
-  }
-
-  figure,
-  image {
-    float: none;
-  }
-
+.btn {
+  width: 100%;
+}
 
 @media screen and (min-width:768px) {
   .chisonoContent p:first-of-type::first-letter {
     color: hsl(220, 60%, 30%);
     font-size: 3rem;
     font-weight: bold;
-    
+
   }
- figure,
+
+  figure,
   image {
     float: inline-start;
+  }
+  
+  form {
+  width: 50%;
+}
+
+  .btn{
+    width: 50%;
   }
 }
 
