@@ -393,3 +393,37 @@ td p {
 .project:nth-of-type(odd) {
   border-left: 5px solid hsl(220, 30%, 25%);
 }
+
+
+@media screen and (max-width:576px) {
+    figure{
+      float: none;
+      margin: 0 auto;
+    }
+    .btn{
+      width: 100%;
+    }
+  
+}
+
+@media screen and (max-width:768px) {
+    main{
+      max-width: 100% !important;
+      padding-inline: 0px ;
+    }
+}
+
+@media screen and (min-width:576px) {
+      form{
+      width: 50%;
+    }
+     .btn{
+      width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+  .title{
+    font-size: 2.5rem;
+  }
+}
