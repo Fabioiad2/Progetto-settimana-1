@@ -7,6 +7,10 @@ body {
   background-color: #f4f1ec;
   color: #2b2b2b;
 }
+html{
+  scroll-padding-top: 290px;
+
+}
 
 h1,
 h2,
