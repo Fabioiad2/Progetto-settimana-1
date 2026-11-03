@@ -9,6 +9,7 @@
     integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/index.css">
+  <script type="module" src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -98,21 +99,21 @@
             </td>
             <td>
               <div class="livelloContainer rounded">
-                  <div class="livello livelloHtml rounded"></div>
+                <div class="livello livelloHtml rounded"></div>
               </div>
             </td>
           </tr>
           <tr>
             <td>
               <h4 class="titoloTD">
-                <i class="fa-brands fa-css3-alt"></i>           
-                   CSS3
+                <i class="fa-brands fa-css3-alt"></i>
+                CSS3
               </h4>
               <p>Selettori, pseudo-classi, box model, float, pseudo-elementi, Google Fonts</p>
             </td>
-             <td>
+            <td>
               <div class="livelloContainer rounded">
-                  <div class="livello livelloCss rounded"></div>
+                <div class="livello livelloCss rounded"></div>
               </div>
             </td>
           </tr>
@@ -124,9 +125,9 @@
               </h4>
               <p>init, add, commit, push, repository remoti, pubblicazione su GitHub Pages</p>
             </td>
-             <td>
+            <td>
               <div class="livelloContainer rounded">
-                  <div class="livello livelloGit rounded"></div>
+                <div class="livello livelloGit rounded"></div>
               </div>
             </td>
           </tr>
@@ -138,9 +139,9 @@
               </h4>
               <p>Navigazione tra cartelle, gestione file, comandi base di shell su macOS e Linux</p>
             </td>
-             <td>
+            <td>
               <div class="livelloContainer rounded">
-                  <div class="livello livelloTerminal rounded"></div>
+                <div class="livello livelloTerminal rounded"></div>
               </div>
             </td>
           </tr>
@@ -152,9 +153,9 @@
               </h4>
               <p>README, documentazione tecnica, scrittura chiara per altri sviluppatori</p>
             </td>
-             <td>
+            <td>
               <div class="livelloContainer rounded">
-                  <div class="livello livelloMD rounded"></div>
+                <div class="livello livelloMD rounded"></div>
               </div>
             </td>
           </tr>
@@ -265,30 +266,39 @@
         Contatti
       </h2>
       <p>Sono presente in queste piattaforme, dove puoi seguirmi e contattarmi</p>
-      <form class="staticForm" method="post" action="">
-        <label for="name" id="name">Nome</label>
-        <input class="inputForm" placeholder="il tuo nome" type="text" name="name" id="name">
-        <label required for="email" id="email">email</label>
-        <input class="inputForm" type="text" placeholder="la tua email" name="email" id="email">
-        <label for="select">Motivo del contatto</label> <br>
-        <select class="inputForm" name="select" id="select">
-          <option value="#">seleziona un opzione</option>
-          <option value="#">opzione A</option>
-          <option value="#">opzione B</option>
-          <option value="#">opzione C</option>
-        </select> <br>
-        <label for="date">Data preferita per la risposta</label>
-        <input class="inputForm" type="date" name="date" id="date">
-        <label for="messaggio">messaggio</label>
-        <textarea class="inputForm" required rows="5" name="messaggio" id="messaggio"
-          placeholder="scrivi il messaggio"></textarea>
-        <input type="checkbox" name="verify" id="verify">
-        <label for="verify">Accetto di essere ricontattato</label>
-        <br>
-        <button class="btn" type="submit">
-          <i class="fa-regular fa-paper-plane"></i>
-          Invia</button>
-      </form>
+
+      <button id="openModal" class="btn" type="submit">Contattami</button>
+      <div class="overlay">
+        <div class="modal">
+          <h2>Contattami</h2>
+          <p>Complila il form per scrivermi. Ti rispondo entro 24 ore</p>
+          <button id="closeModal">x</button>
+          <form class="staticForm" method="post" action="">
+            <label for="name" id="name">Nome</label>
+            <input class="inputForm" placeholder="il tuo nome" type="text" name="name" id="name">
+            <label required for="email" id="email">email</label>
+            <input class="inputForm" type="text" placeholder="la tua email" name="email" id="email">
+            <label for="select">Motivo del contatto</label> <br>
+            <select class="inputForm" name="select" id="select">
+              <option value="#">seleziona un opzione</option>
+              <option value="#">opzione A</option>
+              <option value="#">opzione B</option>
+              <option value="#">opzione C</option>
+            </select> <br>
+            <label for="date">Data preferita per la risposta</label>
+            <input class="inputForm" type="date" name="date" id="date">
+            <label for="messaggio">messaggio</label>
+            <textarea class="inputForm" required rows="5" name="messaggio" id="messaggio"
+              placeholder="scrivi il messaggio"></textarea>
+            <input type="checkbox" name="verify" id="verify">
+            <label for="verify">Accetto di essere ricontattato</label>
+            <br>
+            <button class="btn" type="submit">
+              <i class="fa-regular fa-paper-plane"></i>
+              Invia</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -303,16 +313,16 @@
       <div class="cardsocial">
         <div class="icon">
 
-        <a href="">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
       </div>
       <div class="cardsocial">
         <div class="icon">
-        <a href="">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
+          <a href="">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
         </div>
 
       </div>
