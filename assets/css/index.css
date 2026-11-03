@@ -239,6 +239,9 @@ ul {
 }
 
 .project:first-of-type h3:after {
+  position: absolute;
+  right: 0;
+  top: 0;
   content: "NEW ";
   background-color: red;
   color: white;
@@ -249,7 +252,9 @@ ul {
 
 .project:first-of-type {
   background-color: rgba(245, 245, 220, 0.152);
+  position: relative;
 }
+
 
 .tab:hover a {
   /* cambiare colore background */
@@ -482,4 +487,23 @@ footer{
   padding: 20px;
   width: 125px;
   font-size: 1.5rem;
+}
+
+
+#tornaSu{
+  position: fixed;
+  z-index: 3000;
+  bottom: 60px;
+  right: 0;
+  font-size: 2rem;
+  border: 1px solid white;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: blue;
+}
+
+#tornaSu i{
+  color: white;
 }
