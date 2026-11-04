@@ -540,6 +540,7 @@ footer{
   width: 28%;
   height: 25px;
   text-align: center;
+  cursor: pointer;
 }
 
 .pill:first-child{
