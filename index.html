@@ -52,7 +52,7 @@
   </header>
   <main>
 
-    <section class="mtNegativo" id="chiSono">
+    <section class="" id="chiSono">
       <h2 class="sectionTitle">Chi sono</h2>
       <div class="chisonoRow">
         <figure class="containierlogo">
@@ -221,47 +221,36 @@
     <section id="progetti">
       <h2 class="sectionTitle">Progetti</h2>
       <p>I lavori svolti durante le prime settimane del corso.</p>
-      <a href="#start">Torna su</a>
+      <div class="rowProject">
+        <article class="project">
+          <h3>
+            Card di presentazione
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni sapiente, atque voluptate rem earum,
+            possimus
+            quasi eius dolore facere nisi tempore sint aut ipsa et dolorum culpa provident eum.
+          </p>
+          <a target="_blank" href="javascript:void(0)"><i class="fa-brands fa-github"></i> Vedi su github</a>
+        </article>
 
-      <article class="project">
-        <h3>
-          Pagina ricetta
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nihil, commodi at, ratione sint beatae
-          assumenda
-          accusantium architecto maxime aperiam rerum inventore voluptatibus, mollitia tempore eos doloremque! Ad, eius
-          debitis.
-        </p>
-        <a target="_blank" href="javascript:void(0)"><i class="fa-brands fa-github"></i> Vedi su github</a>
-      </article>
-
-      <article class="project">
-        <h3>
-          Card di presentazione
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni sapiente, atque voluptate rem earum,
-          possimus
-          quasi eius dolore facere nisi tempore sint aut ipsa et dolorum culpa provident eum.
-        </p>
-        <a target="_blank" href="javascript:void(0)"><i class="fa-brands fa-github"></i> Vedi su github</a>
-      </article>
-
-      <article class="project">
-        <h3>
-          Portfolio Personale
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni sapiente, atque voluptate rem earum,
-          possimus
-          quasi eius dolore facere nisi tempore sint aut ipsa et dolorum culpa provident eum.
-        </p>
-        <a target="_blank" href="javascript:void(0)"><i class="fa-brands fa-github"></i> Vedi su github</a>
-      </article>
+        <article class="project">
+          <h3>
+            Portfolio Personale
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni sapiente, atque voluptate rem earum,
+            possimus
+            quasi eius dolore facere nisi tempore sint aut ipsa et dolorum culpa provident eum.
+          </p>
+          <a target="_blank" href="javascript:void(0)"><i class="fa-brands fa-github"></i> Vedi su github</a>
+        </article>
+      </div>
       <a class="projectlink" href="project.html">
         <i class="fa-solid fa-arrow-right-long"></i>
         Tutti i progetti in dettaglio</a>
+      <a href="#start">Torna su</a>
+
     </section>
 
 
@@ -278,11 +267,13 @@
         <div class="modal">
           <h2>Contattami</h2>
           <p>Complila il form per scrivermi. Ti rispondo entro 24 ore</p>
-          <button id="closeModal">x</button>
+          <button id="closeModal"><div>
+            x
+          </div></button>
           <form class="staticForm" method="post" action="">
-            <label for="name" >Nome</label>
+            <label for="name">Nome</label>
             <input class="inputForm" placeholder="il tuo nome" type="text" name="name" id="name">
-            <label required for="email" >email</label>
+            <label required for="email">email</label>
             <input class="inputForm" type="text" placeholder="la tua email" name="email" id="email">
             <label for="select">Motivo del contatto</label> <br>
             <select class="inputForm" name="select" id="select">
@@ -343,7 +334,7 @@
     <p>&copy;2026 Fabio Iadicicco </p>
   </footer>
   <div id="tornaSu"><a href="#">
-    <i class="fa-solid fa-arrow-up-long"></i></div>
+      <i class="fa-solid fa-arrow-up-long"></i></div>
   </a>
 </body>
 
