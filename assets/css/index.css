@@ -207,6 +207,10 @@ ul {
 }
 li{
   list-style: none;
+  transition: 200ms;
+}
+li:hover{
+  transform: scale(1.1);
 }
 
 .navbar {
@@ -251,8 +255,11 @@ li{
   border: 5px solid hsl(45, 90%, 60%);
   width: 100%;
   height: 100%;
+  transition: 200ms;
 }
-
+.profileimage:hover{
+  transform: scale(1.1);
+}
 
 
 .project:first-of-type h3:after {
@@ -311,6 +318,11 @@ body {
   border-bottom: 5px solid hsl(45, 90%, 50%);
   border-radius: 10px;
   margin-top: 10px;
+  transition: 600ms;
+}
+
+.project:hover{
+  transform: scale(1.04);
 }
 
 .projectlink {
@@ -423,6 +435,19 @@ main {
   padding-inline: 0px;
   margin: 0 auto;
   padding: 40px 20px;
+  animation: start 1000ms;
+ 
+}
+@keyframes start {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 form {
@@ -432,6 +457,10 @@ form {
 .btn {
   width: 100%;
 }
+
+
+
+
 
 @media screen and (min-width:768px) {
   .chisonoContent p:first-of-type::first-letter {
@@ -478,6 +507,8 @@ footer{
   z-index: 2000;
   inset: 0;
   background-color: rgb(0 0 0 / 0.5);
+  animation: start 8000ms;
+
 }
 
 .modal{
@@ -492,6 +523,7 @@ footer{
   border-radius: 10px;
 }
 
+
 #closeModal{
   position: absolute;
   color: white;
@@ -504,6 +536,18 @@ footer{
   text-align: center;
 }
 
+ @keyframes pulse{
+    0%{
+      transform: scale(1);
+      transform: rotate(0deg);
+      border-left: 5px solid red ;
+    }
+      100%{
+      transform: scale(1.1);
+            transform: rotate(360deg);
+            border: 5px solid red ;
+    }
+  }
 
 #tornaSu{
   position: fixed;
@@ -517,6 +561,7 @@ footer{
   text-align: center;
   border-radius: 100%;
   background-color: blue;
+  animation: pulse 900ms infinite;
 }
 
 #tornaSu i{
@@ -541,7 +586,12 @@ footer{
   height: 25px;
   text-align: center;
   cursor: pointer;
+  transition: 200ms;
 }
+.pill:hover{
+  transform: scale(1.1);
+}
+
 
 .pill:first-child{
   color: black;
@@ -588,3 +638,6 @@ footer{
       flex-direction: row;
     }
   }
+
+
+ 
